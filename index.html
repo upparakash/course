@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn | Full Stack Development</title>
+    <script type="text/javascript">
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "jd0jjhlklb");
+    </script>
+    <link rel="stylesheet" href="index.css"></link>
+    <script src="https://kit.fontawesome.com/91ebed4cc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+    <!-- Google Tag Manager -->
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N67JBZX');
+    </script>
+
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Google Analytics Code -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N91J9X7MGP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-N91J9X7MGP');
+    </script>
+
+    <!-- END of Google Analytics Code -->
+
+    <!-- Ad Conversion Tracking -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-686993898"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'AW-686993898');
+    </script>
+
+    <!-- Ad Conversion Tracking -->
+
+    <!-- Meta Pixel Code -->
+
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '881989606473023');
+        fbq('track', 'PageView');
+
+        let url = String(window.location)
+
+        const startIndex = url.indexOf('adgroupid=');
+
+        // If 'adgroupid=' is not found, return null or an appropriate value
+        if (startIndex === -1) {
+            fbq('track', 'Not From Google Ads');
+        }
+
+        // Extract the substring starting from 'adgroupid='
+        let adgroupIdPart = url.substring(startIndex + 'adgroupid='.length);
+
+        // Find the position of the next '&' character, if any
+        const endIndex = adgroupIdPart.indexOf('&');
+
+        // If another parameter follows, truncate the string to get only the adgroup ID
+        if (endIndex !== -1) {
+            adgroupIdPart = adgroupIdPart.substring(0, endIndex);
+        }
+
+        console.log(adgroupIdPart)
+
+        fbq('track', adgroupIdPart);
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=881989606473023&ev=PageView&noscript=1"/></noscript>
+
+    <!-- End Meta Pixel Code -->
+
+
+
+</head>
+
+</html>
+</head>
+
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N67JBZX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="nav-container">
+        <div class="navbar-box">
+            <nav class="navbar navbar-expand-lg navbar-container">
+                <div class="container">
+                    <a class="navbar-brand navbar-img" href="https://cynohub.com">
+                    <img src="https://www.cynohub.com/wp-content/uploads/2020/10/Black-Technology-LinkedIn-316x96.png" class="navbar-img"/>
+                  </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" aria-current="page" href="https://www.cynohub.com/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-dark fw-bold" href="https://www.cynohub.com/academics/">Academics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-dark fw-bold" href="https://www.cynohub.com/placements/">Placements</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle navbar-menu-active   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Upskilling
+                        </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://www.cynohub.com/robotics-practical-oriented-course/">Robotics</a></li>
+                                    <li><a class="dropdown-item" href="#">IELTS</a></li>
+                                    <li><a class="dropdown-item" href="https://www.cynohub.com/full-stack-development-masterclass/">Full Stack developement</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-dark fw-bold" href="https://api.whatsapp.com/send/?phone=919703712609&text&type=phone_number&app_absent=0">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p class="job-text"><span class="hightlight">100%</span> Job Assistance Program</p>
+                <h1 class="main-heading">Learn <span class="hightlight">Full Stack</span> Development</h1>
+                <h3>Land a Job as a software developer in 5 Months</h3>
+                <div class="stars-container">
+                    <i class="fa-solid fa-star stars"></i>
+                    <i class="fa-solid fa-star stars"></i>
+                    <i class="fa-solid fa-star stars"></i>
+                    <i class="fa-solid fa-star stars"></i>
+                    <i class="fa-solid fa-star stars star-dull"></i>
+                </div>
+                <div class="job-text-options">
+                    <div>
+                        <img src="https://www.cynohub.com/wp-content/uploads/2022/12/Bitmap-2.png" />
+                        <p>1:1 Mentor Support</p>
+                    </div>
+                    <div>
+                        <img src="https://www.cynohub.com/wp-content/uploads/2022/12/Bitmap-5.png" />
+                        <p>Join 1000+ Community of Learners</p>
+                    </div>
+                    <div>
+                        <img src="	https://www.cynohub.com/wp-content/uploads/2022/12/Bitmap-4.png" />
+                        <p>Doubt Clarification Sessions
+                        </p>
+                    </div>
+                    <div>
+                        <img src="	https://www.cynohub.com/wp-content/uploads/2022/12/Bitmap.png" />
+                        <p>Placement Support</p>
+                    </div>
+                    <div>
+                        <img src="	https://www.cynohub.com/wp-content/uploads/2022/12/Bitmap-3.png" />
+                        <p>150+ Hiring Partners
+                        </p>
+                    </div>
+                    <div>
+                        <img src="	https://www.cynohub.com/wp-content/uploads/2022/12/Bitmap-3.png" />
+                        <p>No Cost EMI
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="banner-btn">
+                    <button class="book-btn">
+                        <i class="fa-solid fa-phone address-icon"></i>
+                        Book Free Guidance Session
+                    </button>
+                </div> -->
+            </div>
+            <div class="banner-form" id="banner-form">
+                <h1>Book a <span class="hightlight">Free Guidance Session</span> With Our Experts</h1>
+                <form class="input-form" method="post">
+                    <label for="full-name" class="label-items">Full Name<span class="star">*</span></label><br/>
+                    <input type="text" placeholder="Your Full Name" id="full-name" name="name" /><br/>
+                    <label for="email">Email<span class="star">*</span></label><br/>
+                    <input type="text" placeholder="Your Email Address" id="email" name="email" /><br/>
+                    <label for="whatsapp">Whatsapp Number<span class="star">*</span></label><br/>
+                    <div class="otp-container">
+                        <input type="number" class="otp-input" placeholder="Your Whatsapp Number" id="whatsapp" name="whatsapp" />
+                        <button class="otp-btn" id="otpBtn" style="display: block;">Verify OTP</button>
+                        <dotlottie-player id="otp-sent-loader" src="https://lottie.host/9920a9d8-df1b-4f1c-934b-31986e017ac8/3SjdgzcNXt.json" background="transparent" speed="1.5" style="width: 100px; height: 70px; display: none;" loop autoplay></dotlottie-player>
+                        <div class="verified-container" style="display: none;" id="otp-sent">
+                            <img src="./assets/verified.png" />
+                            <h5>OTP sent</h5>
+                        </div>
+                    </div>
+                    <div class="otp-container verify-container" id="otpVerifyContainer">
+                        <input type="number" class="otp-input" placeholder="Enter OTP" id="otp" name="whatsapp" />
+                        <div class="verified-container" style="display: none;" id="verified-container">
+                            <img id="otp-img" src="./assets/verified.png" />
+                            <h5 id="otp-text">Verified</h5>
+                        </div>
+                        <dotlottie-player id="otp-verify-loader" src="https://lottie.host/9920a9d8-df1b-4f1c-934b-31986e017ac8/3SjdgzcNXt.json" background="transparent" speed="1.5" style="width: 100px; height: 70px; display: none;" loop autoplay></dotlottie-player>
+                    </div>
+                    <label for="dropdown">Occupation<span class="star">*</span></label><br/>
+                    <select id="select" name="career">
+                                <option value="Student">Student</option>
+                                <option value="Looking for Job ">Looking for Job</option>
+                                <option value="Working Professional">Working Professional</option>
+                            </select><br/>
+                    <input type="submit" id="submit" value="Book a Free Session" class="book-btn book-button" />
+                    <!-- <h3 style="display: none;" class="loader">Loading...</h3> -->
+                    <div class="spinner-container loader" style="display: none;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <p id="errorMsg" style="color: red; text-align: center; display: none;">Please fill the details correctly and click on the button</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="learn-container">
+        <div class="learn-content">
+            <h1 class="main-heading">Learn from the best in the industry</h1>
+            <div class="slider-class">
+                <div class="slider">
+                    <div class="media-slider">
+                        <img src="./assets/19.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="./assets/12.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="./assets/20.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="./assets/15.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="./assets/16.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-container-header">
+                <div class="video-container-text">
+                    <h1 class="main-heading">Hear directly from the students</h1>
+                </div>
+                <button class="book-btn industry-btn-bg">
+                        <i class="fa-solid fa-phone address-icon"></i>
+                    <a href="#banner-form">Book Free Guidance Session</a>
+                    </button>
+            </div>
+            <div class="videos">
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/720535024?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" width="2000" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Full Stack Testimonials"></iframe>
+                </div>
+                <div class="video">
+                    <iframe src="https://player.vimeo.com/video/786514312?h=318c84f1b8&amp;badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                        title="Student Testimonials  Cynohub"></iframe>
+                </div>
+            </div>
+            <div class="industry-bg-sm">
+                <button class="book-btn">
+                    <i class="fa-solid fa-phone address-icon"></i>
+                    Book Free Guidance Session
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="google-container">
+        <div class="google-content">
+            <div class="google-heading">
+                <h1 class="main-heading">What does </h1>
+                <img src="https://i.ibb.co/Q850hh4/1588088521729-removebg-preview.png" />
+                <h1 class="main-heading"> Say about Full Stack</h1>
+            </div>
+            <div class="google-text">
+                <div id="google">
+                    <ul>
+                        <li value=7 onclick="changeImage(value)" style="color: #f7b538;" class="list-item">HTML & CSS Developer Salary</li>
+                        <li value=8 onclick="changeImage(value)" class="list-item">Front End Developer Salary</li>
+                        <li value=9 onclick="changeImage(value)" class="list-item">Backend Developer Salary</li>
+                        <li value=10 onclick="changeImage(value)" class="list-item">Full Stack Developer Salary</li>
+                    </ul>
+                    <button class="book-btn google-btn">
+                        <i class="fa-solid fa-phone address-icon"></i>
+                        <a href="#banner-form">Book Free Guidance Session</a>
+                    </button>
+                </div>
+                <div class="google-img">
+                    <img src="https://www.cynohub.com/wp-content/uploads/2022/12/5rev-2-1.png" id="googleImg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="photo">
+        <div class="photos-container">
+            <div class="main-heading photos-heading">
+                <h1 class="cynohub" style="color: white; font-weight: bold;">Cynohub</h1>
+                <div class="photo-line"></div>
+                <h1 class="photo-heading" style="color: #3d1d7b;  font-weight: bold;">Join 1000+ Community of Learners</h1>
+            </div>
+            <div class="photos">
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/b51fb11298a1ce1d6ed967fa0fe8b42a.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/654c681b6d84b03892958f9f1d68d41c.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/abecc4e7636e16973e19b5ff653b1a04.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/1e6e6cbf75b1a2301d0b3232aae67cf0.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/1396d8b2916747e5e974e9e7046868bd.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/28999f02ae8085b4a16045d16a2c19e6.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/d16aa0e8010fe6e7c728b2b0ce5bf50f.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/78c04777a9cd3b2fd339be0baea6d2eb.png" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/982d914085d480cd09984408e1c187a7.png" />
+                </div>
+                <div class="photo-logo">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/429241bfbfb4c97b9d8aa171447cf26b.svg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/3e914abb2f648fcc64b663c7ae3f2db1.png" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/9c71d2ed3ab7833336720db23be5af81.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/eda28357168639074ac286fc022f0bf1.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/355adce73913fc2703e970665a691f72.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/88b4a1a931733c836a7e4d4a6d1c648a.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/db794a449cf06380160f8f41a3c8c48c.png" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/cce54ba386dd882a4f1514abb07d7889.jpg" />
+                </div>
+                <div class="photo-logo">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/429241bfbfb4c97b9d8aa171447cf26b.svg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/41d630bbabf34ca5be29ca09e4247ad7.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/32ba25bac636f63a79b28cb552de6990.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/ec183d196cf4f675d044402c56a047f3.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/ca7677aa1d989dbcb0c755418ae530f3.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/73824f468040dfaeb65e0baf63b27beb.jpg" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/0ee296b71ff2dad84f5cd47ab77ae89e.png" />
+                </div>
+                <div class="photo-box">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/9bf672b5c922bc3b422a4f16253be0de.png" />
+                </div>
+            </div>
+            <div class="photos-company-container">
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/ba9b225108d80e3f1f5aad9aec011311.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/f83ba072182681d47b66afabb193944b.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/3ef5d7786387c5ba33f83bf0dc82dc80.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/ce7341b36a90744cd23416756303a018.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/06fd7fa93532dbddb63c782f784df5f9.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/185302cdf454b37644e403dcc7564255.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/cf2d15796ec4991ec8ade61d6956c713.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/ab0414fd6acbc18c9ae570d644280aee.png" />
+                </div>
+                <div class="company-container">
+                    <img src="https://cynohub-full-stack-test-0001.my.canva.site/html-internship-page/images/e0d818b14c3e7d25d2bffb3c2b338190.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="gif-container">
+        <div class="gif-content">
+            <div class="gif-text">
+                <h1 class="main-heading">Learn the <span class="hightlight">highest paid skills</span> in the market :</h1>
+                <ul>
+                    <li id="gif-1" value="1" onclick="changeImage(value)" style="color: #f7b538;" class="list-item">HTML & CSS</li>
+                    <li>
+                        <div class="gif-sm">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim.gif" id="gifSm" />
+                        </div>
+                    </li>
+                    <li id="gif-2" value="2" onclick="changeImage(value)" class="list-item">JavaScript</li>
+                    <li id="gif-3" value="3" onclick="changeImage(value)" class="list-item">Data Structures & Algorithms</li>
+                    <li id="gif-4" value="4" onclick="changeImage(value)" class="list-item">React JS</li>
+                    <li id="gif-5" value="5" onclick="changeImage(value)" class="list-item">Mongo DB, mySQL</li>
+                    <li id="gif-6" value="6" onclick="changeImage(value)" class="list-item">Express JS, Node JS</li>
+                </ul>
+                <button class="book-btn">
+                    <i class="fa-solid fa-phone address-icon"></i>
+                    <a href="#banner-form">Book Free Guidance Session</a>
+                    </button>
+            </div>
+            <div class="gif">
+                <img src="https://www.cynohub.com/wp-content/uploads/2023/01/imgpsh_fullsize_anim.gif" id="gifImg" />
+            </div>
+        </div>
+    </div>
+    <div class="industry-container">
+        <div class="industry-content">
+            <div class="industry-img-bg">
+                <img src="https://www.cynohub.com/wp-content/uploads/2022/12/1-2.png" id="industryImg" />
+            </div>
+            <div class="industry-text">
+                <h1 class="main-heading">Be Industry-Ready From Day-One</h1>
+                <ul>
+                    <li value="11" onclick="changeImage(value)" style="color: #f7b538;" class="list-item">Learn Professional Communication</li>
+                    <li>
+                        <div class="industry-img-sm">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/1-2.png" id="industryImgSm" />
+                        </div>
+                    </li>
+                    <li value="12" onclick="changeImage(value)" class="list-item">Job Training</li>
+                    <li value="13" onclick="changeImage(value)" class="list-item">Interview Preparation</li>
+                    <li value="14" onclick="changeImage(value)" class="list-item">Mock Interviews</li>
+                </ul>
+                <button class="book-btn">
+                    <i class="fa-solid fa-phone address-icon"></i>
+                    <a href="#banner-form">Book Free Guidance Session</a>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <div class="learn-container">
+        <div class="learn-content">
+            <h1 class="main-heading">Recognized & Supported by </h1>
+            <div class="slider-class">
+                <div class="slider">
+                    <div class="recognized-slider">
+                        <img src="./assets/1.png" />
+                    </div>
+                    <div class="recognized-slider">
+                        <img src="./assets/2.png" />
+                    </div>
+                    <div class="recognized-slider">
+                        <img src="./assets/3.png" />
+                    </div>
+                    <div class="recognized-slider">
+                        <img src="./assets/4.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="learn-container">
+        <div class="learn-content">
+            <h1 class="main-heading">In the Media </h1>
+            <div class="slider-class">
+                <div class="slider">
+                    <div class="media-slider">
+                        <img src="https://www.cynohub.com/wp-content/uploads/2023/02/download-1-1.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="https://www.cynohub.com/wp-content/uploads/2023/02/images-1-1.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="https://www.cynohub.com/wp-content/uploads/2023/02/download-2.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="https://www.cynohub.com/wp-content/uploads/2023/02/images-1.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="https://www.cynohub.com/wp-content/uploads/2023/01/download-1-2.png" />
+                    </div>
+                    <div class="media-slider">
+                        <img src="https://www.cynohub.com/wp-content/uploads/2023/01/download-1.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="career-container">
+        <div class="career-content">
+            <h1 class="main-heading">Career Transitions</h1>
+            <div class="career-card-container">
+                <div class="career-card">
+                    <div class="career-card-top">
+                        <div class="career-box">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2023/01/16-2.png" />
+                            <h3>Srikanth reddy</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/arrow-1.png" />
+                            <h3>12 LPA</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2023/01/download-15.png" />
+                            <h3>6 Months</h3>
+                        </div>
+                    </div>
+                    <div class="career-card-bottom">
+                        <p>Before joining Cynohub, I had no programming knowledge. Now I am confident in programming and working in my dream role.</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-card-top">
+                        <div class="career-box">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2023/01/17-2.png" />
+                            <h3>Sai Tanuja</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/arrow-1.png" />
+                            <h3>12 LPA</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2023/01/download-1.png" />
+                            <h3>6 Months</h3>
+                        </div>
+                    </div>
+                    <div class="career-card-bottom">
+                        <p>I got placed in a non-it company in my college placements. After Cynohub I got an offer from two companies, I chose to go with Accenture.</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-card-top">
+                        <div class="career-box">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2023/01/18-2.png" />
+                            <h3>Vaishnavi</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/arrow-1.png" />
+                            <h3>12 LPA</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2023/01/download-1.png" />
+                            <h3>6 Months</h3>
+                        </div>
+                    </div>
+                    <div class="career-card-bottom">
+                        <p>I thought it will be very difficult for a student like me from CIVIL background to learn coding skills but Cynohub’s teaching helped me to overcome that fear.</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-card-top">
+                        <div class="career-box">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/man-1.png" />
+                            <h3>Sowmith Reddy</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/arrow-1.png" />
+                            <h3>13 LPA</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2022/12/wipro-1.png" />
+                            <h3>6 Months</h3>
+                        </div>
+                    </div>
+                    <div class="career-card-bottom">
+                        <p>I failed in programming while I was in college, that was the most difficult subject for me, but Cynohub made it 10x easy to learn and crack interviews.</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-card-top">
+                        <div class="career-box">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2023/01/19-2.png" />
+                            <h3>Naveen</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/arrow-1.png" />
+                            <h3>7 LPA</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2022/12/1-3.png" />
+                            <h3>6 Months</h3>
+                        </div>
+                    </div>
+                    <div class="career-card-bottom">
+                        <p>Cynohub’s placement support is the best with excellent training for interviews, their technical projects were a highlight when I attended interviews.</p>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-card-top">
+                        <div class="career-box">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2023/01/10-4.png" />
+                            <h3>Venkata Ramana</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="https://www.cynohub.com/wp-content/uploads/2022/12/arrow-1.png" />
+                            <h3>6 LPA</h3>
+                        </div>
+                        <div class="career-box extra-styling">
+                            <img src="	https://www.cynohub.com/wp-content/uploads/2022/06/techm-removebg-preview-1.png
+                            " />
+                            <h3>6 Months</h3>
+                        </div>
+                    </div>
+                    <div class="career-card-bottom">
+                        <p>I had a 6 Months career gap after graduation with no technical skillset before I joined Cynohub, they helped me to land a job as a developer in Tech Mahindra.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="book-btn">
+                <i class="fa-solid fa-phone address-icon"></i>
+                <a href="#banner-form">Book Free Guidance Session</a>
+            </button>
+        </div>
+    </div>
+    <div class="companies-container">
+        <div class="companies-content">
+            <h1 class="main-heading">Get Placed with more than 150+ Hiring Partners</h1>
+            <div class="companies-logo-container">
+                <div>
+                    <img src="./assets/5.png" />
+                </div>
+                <div>
+                    <img src="./assets/6.png" />
+                </div>
+                <div>
+                    <img src="./assets/7.png" />
+                </div>
+                <div>
+                    <img src="./assets/8.png" />
+                </div>
+                <div>
+                    <img src="./assets/9.png" />
+                </div>
+                <div>
+                    <img src="./assets/10.png" />
+                </div>
+                <div>
+                    <img src="./assets/11.png" />
+                </div>
+                <div>
+                    <img src="./assets/12.png" />
+                </div>
+                <div>
+                    <img src="./assets/13.png" />
+                </div>
+                <div>
+                    <img src="./assets/14.png" />
+                </div>
+                <div>
+                    <img src="./assets/15.png" />
+                </div>
+                <div>
+                    <img src="./assets/16.png" />
+                </div>
+                <div>
+                    <img src="./assets/17.png" />
+                </div>
+                <div>
+                    <img src="./assets/18.png" />
+                </div>
+                <div>
+                    <img src="./assets/19.png" />
+                </div>
+                <div>
+                    <img src="./assets/20.png" />
+                </div>
+                <div>
+                    <img src="./assets/21.png" />
+                </div>
+                <div>
+                    <img src="./assets/22.png" />
+                </div>
+                <div>
+                    <img src="./assets/23.png" />
+                </div>
+                <div>
+                    <img src="./assets/24.png" />
+                </div>
+            </div>
+            <button class="book-btn companies-book-btn">
+                <i class="fa-solid fa-phone address-icon"></i>
+                <a href="#banner-form">Book Free Guidance Session</a>
+            </button>
+        </div>
+    </div>
+    <div class="career-cards-container">
+        <div class="career-cards-content">
+            <h1 class="main-heading">Career As a Full Stack Developer</h1>
+            <div class="career-cards-box">
+                <div class="career-a-card">
+                    <i class="fa-solid fa-money-bill-wave fa-icons"></i>
+                    <h3>Salary Trend</h3>
+                    <p>A Full Stack Developer earns an average of 12 lakhs a year, but with the sufficient skills and experience, the prospects of earning much more are quite strong.</p>
+                </div>
+                <div class="career-a-card">
+                    <i class="fa-solid fa-chart-line fa-icons"></i>
+                    <h3>Annual Growth</h3>
+                    <p>The global demand for full stack developers is now growing at a rate of 28% In then next years, it is expected to be substantially greater, with even more prospects for developers.</p>
+                </div>
+                <div class="career-a-card">
+                    <i class="fa-solid fa-indian-rupee-sign fa-icons"></i>
+                    <h3>58% Average Salary hike</h3>
+                    <p>With full stack development, you may expect a minimum of a 58 percent compensation increase on your current wage if you are moving jobs or want to rise through the ranks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartoons-container">
+        <div class="cartoons-content">
+            <div class="cartoons-card">
+                <img src="https://www.cynohub.com/wp-content/uploads/2023/01/idea.png" />
+                <p>16+ Real Time Projects 100% Job Assistance</p>
+            </div>
+            <div class="cartoons-card">
+                <img src="https://www.cynohub.com/wp-content/uploads/2023/01/project.png" />
+                <p>Real-world projects from industry experts</p>
+            </div>
+            <div class="cartoons-card">
+                <img src="https://www.cynohub.com/wp-content/uploads/2023/01/online-counseling.png" />
+                <p>Career Mentoring Sessions</p>
+            </div>
+            <div class="cartoons-card">
+                <img src="https://www.cynohub.com/wp-content/uploads/2023/01/cv.png" />
+                <p>Resume & Linkedin Profile Building</p>
+            </div>
+            <div class="cartoons-card">
+                <img src="https://www.cynohub.com/wp-content/uploads/2023/01/flexible.png" />
+                <p>Flexible Learing Program</p>
+            </div>
+        </div>
+    </div>
+    <div class="download-btn">
+        <a href="https://www.cynohub.com/wp-content/uploads/2023/02/Full-Stack-Development-HandBook-2.pdf">
+            <button class="book-btn">
+                <i class="fa-regular fa-circle-down" style="margin-right: 10px;"></i>
+                Download The Curriculum
+            </button>
+        </a>
+
+    </div>
+    <div class="chart-container">
+        <div class="chart-content">
+            <h1 class="main-heading">Next Steps</h1>
+            <div class="chart-content-container">
+                <div class="chart-card">
+                    <div class="chart-number">
+                        <div class="number">
+                            <h3>1</h3>
+                        </div>
+                        <div class="line">
+                            <hr width="100%;" color="#ccc" size="1" />
+                        </div>
+                    </div>
+                    <div class="chart-text">
+                        <h3>Step #1 Enroll</h3>
+                        <p>Enroll into this course and take your first step towards Full Stack Development.</p>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-number">
+                        <div class="number">
+                            <h3>2</h3>
+                        </div>
+                        <div class="line">
+                            <hr width="100%;" color="#ccc" size="1" />
+                        </div>
+                    </div>
+                    <div class="chart-text">
+                        <h3>Step #2 Projects</h3>
+                        <p>Practice and master your skillset with over 10+ Industry Level Projects.</p>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-number">
+                        <div class="number">
+                            <h3>
+                                3
+                            </h3>
+                        </div>
+                        <div class="line">
+                            <hr width="100%;" color="#ccc" size="1" />
+                        </div>
+                    </div>
+                    <div class="chart-text">
+                        <h3>Step #3 Job Training</h3>
+                        <p>Get Trained with interview etiquette, most commonly asked programming questions and salary negotiations.</p>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-number">
+                        <div class="number">
+                            <h3>
+                                4
+                            </h3>
+                        </div>
+                        <div class="line">
+                            <hr width="100%;" color="#ccc" size="1" />
+                        </div>
+                    </div>
+                    <div class="chart-text">
+                        <h3>Step #4 Certificate</h3>
+                        <p>Complete the assignments and get certified as a full stack developer.</p>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-number">
+                        <div class="number">
+                            <h3>
+                                5
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="chart-text">
+                        <h3>Step #5 Get Placed</h3>
+                        <p>Get placed in a company as a full stack developer earn an average of 12 Lakhs per annum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="course-container">
+        <div class="course-content">
+            <h1 class="main-heading">This Course Includes</h1>
+            <div class="course-cards">
+                <div class="course-card">
+                    <i class="fa-solid fa-diagram-project course-icons"></i>
+                    <h3>Real-world projects from industry experts</h3>
+                    <p>With Real World Projects And Immersive Content Built In Partnership With Top Tier Companies, You’ll Master The Tech Skills Companies Want.</p>
+                </div>
+                <div class="course-card">
+                    <i class="fa-solid fa-chalkboard-user course-icons"></i>
+                    <h3>Technical mentor support</h3>
+                    <p>Our Knowledgeable Mentors Guide Your Learning And Are Focused On Answering Your Questions, Motivating You And Keeping You On Track</p>
+                </div>
+                <div class="course-card">
+                    <i class="fa-solid fa-rocket course-icons"></i>
+                    <h3>Career services</h3>
+                    <p>You’ll Have Access To Github Portfolio Review And LinkedIn Profile Optimization To Help You Advance Your Career And Land A High-Paying Role.</p>
+                </div>
+                <div class="course-card">
+                    <i class="fa-regular fa-clock course-icons"></i>
+                    <h3>Flexible learning program</h3>
+                    <p>Tailor A Learning Plan That Fits Your Busy Life. Learn At Your Own Pace And Reach Your Personal Goals On The Schedule That Works Best For You.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions-container">
+        <div class="questions-content">
+            <h1 class="main-heading">
+                Frequently Asked Questions
+            </h1>
+            <div class="questions-box">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What Are The Job Opportunities For Full Stack Developers In 2022?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">One of the most in-demand roles in the industry is full-stack developer. Because they contribute the most to software projects, companies reward them heftily. As a result, whether you are a new developer or an experienced one,
+                                you will always be in demand in the software industry, with many opportunities awaiting you.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Will I Get A Full Stack Developer Certification?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">You will receive a course completion certificate once you have completed all of the assignments at the end of the course.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            What Kind Of Jobs Can I Get After The Full Stack Developer Program?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Mock interviews, resume reviews, and other forms of preparation assistance We are confident that with the right teaching, curriculum, and guidance, you will achieve your objectives. You will also be able to apply for hundreds
+                                of Jobs Posted by our Recruitment team to get placed as soon as you complete the course.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How Will I Get Placement Assistance?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">This Full Stack Java Developer Program can lead to jobs such as Full Stack Developer, Front-end Engineer, Full Stack Engineer, and Software Engineer.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How Much Salary Can I Expect After The Full Stack Developer Program?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Full Stack Developers are paid well around the world, and their demand is increasing year after year. A Full Stack Developer certification boosts such professionals’ earning potential even further. In India, the salary of a
+                                Full Stack Engineer ranges from 12LPA to 40LPA.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Will I Get Help If I’m Stuck?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Absolutely, our trainers and experts work around the clock to ensure that all of your questions are answered.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="address">
+                <ul>
+                    <li class="heading">Address</li>
+                    <li>
+                        <div class="address-section">
+                            <i class="fa-regular fa-address-book address-icon"></i>
+                            <p>Road no - 9, Kakatiya Hills, Jubilee Hills, Kavuri Hills, Hyderabad, Telangana, Madhapur: 500081</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address-section">
+                            <i class="fa-solid fa-phone address-icon"></i>
+                            <div>
+                                <p>+91 9703712609 (9am - 6pm , Monday - Saturday)</p>
+                                <p>+91 8069068538 (9am - 6pm , Monday - Saturday)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address-section">
+                            <i class="fa-solid fa-envelopes-bulk address-icon"></i>
+                            <p>hello@cynohub.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="apps-icon">
+                            <a href="https://www.instagram.com/cynohub/"><i class="fa-brands fa-instagram app-icons app-icon-links"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.cynohub.app.com"><i  class="fa-brands fa-google-play app-icons app-icon-links"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp app-icons app-icon-links"></i></a>
+                            <a href="https://www.youtube.com/@cynohub"><i class="fa-brands fa-youtube app-icons app-icon-links"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="explore">
+                <ul>
+                    <li class="heading">Explore</li>
+                    <a href="https://www.cynohub.com/academics/" class="footer-links">
+                        <li>Academics</li>
+                    </a>
+                    <a href="#" class="footer-links">
+                        <li>Full Stack Developement Master Class</li>
+                    </a>
+                    <a href="https://www.cynohub.com/robotics-practical-oriented-course/" class="footer-links">
+                        <li>Robotics & Electronics Masterclass</li>
+                    </a>
+
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li class="heading">About Us</li>
+                    <a href="https://api.whatsapp.com/send/?phone=919703712609&text&type=phone_number&app_absent=0" class="footer-links">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=919703712609&text&type=phone_number&app_absent=0" class="footer-links">
+                        <li>Privacy Policy</li>
+                    </a>
+                    <a href="https://www.cynohub.com//terms-of-service/" class="footer-links">
+                        <li>Terms of service</li>
+                    </a>
+
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="copy-rights">
+            <p>© 2023 True Comet Edutech Private Limited</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
